@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://fraud-detection-system-thyp.onrender.com';
 
 export async function getTransactions() {
   const res = await axios.get(`${API_BASE}/transactions`);
