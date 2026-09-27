@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1117;
+  color: #e4e6eb;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #1a1d27;
+  border: 1px solid #2a2d3a;
+  border-radius: 10px;
+  padding: 20px 32px;
+  text-align: center;
+  min-width: 160px;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #9aa0ac;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-card.fraud h3 {
+  color: #f04747;
+}
+
+/* Simulate button */
+button {
+  display: block;
+  margin: 0 auto 28px auto;
+  background: #4f6df5;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #3d57d9;
+}
+
+button:disabled {
+  background: #2a2d3a;
+  cursor: not-allowed;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1d27;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+thead {
+  background: #22252f;
+}
+
+th {
+  text-align: left;
+  padding: 14px 16px;
+  color: #9aa0ac;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 14px 16px;
+  border-top: 1px solid #2a2d3a;
+}
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #22252f;
+}
+
+tr.fraud-row {
+  background: rgba(240, 71, 71, 0.08);
+}
+
+tr.fraud-row:hover {
+  background: rgba(240, 71, 71, 0.14);
+}
