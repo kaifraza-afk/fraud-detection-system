@@ -126,3 +126,42 @@ tr.fraud-row {
 tr.fraud-row:hover {
   background: rgba(240, 71, 71, 0.14);
 }
+
+/* Transaction form */
+.transaction-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #1a1d27;
+  border: 1px solid #2a2d3a;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.transaction-form input {
+  background: #0f1117;
+  border: 1px solid #2a2d3a;
+  color: #e4e6eb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  flex: 1;
+  min-width: 140px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.transaction-form input:focus {
+  border-color: #4f6df5;
+}
+
+.transaction-form input::placeholder {
+  color: #6b7280;
+}
+
+.transaction-form button {
+  margin: 0;
+  flex-shrink: 0;
+}

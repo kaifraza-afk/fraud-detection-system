@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { getTransactions, simulateTransactions } from './services/api';
+import { getTransactions, simulateTransactions, createTransaction } from './services/api';
 import TransactionTable from './components/TransactionTable';
 import StatsBar from './components/StatsBar';
+import TransactionForm from './components/TransactionForm';
 import './App.css';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     <div className="app">
       <h1>Fraud Detection Dashboard</h1>
       <StatsBar transactions={transactions} />
+      <TransactionForm onSuccess={fetchData} />
       <button onClick={handleSimulate} disabled={loading}>
         {loading ? 'Simulating...' : 'Simulate 20 Transactions'}
       </button>
